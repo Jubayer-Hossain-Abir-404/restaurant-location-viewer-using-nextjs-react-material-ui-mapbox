@@ -5,7 +5,7 @@ export default function InputField() {
   return (
     <Box
       sx={{
-        width: 427,
+        width: 300,
       }}
     >
       <TextField

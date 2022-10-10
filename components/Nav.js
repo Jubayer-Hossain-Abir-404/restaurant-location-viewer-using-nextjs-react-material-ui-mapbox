@@ -7,6 +7,7 @@ import BasicSelect from "./BasicSelect";
 import InputField from "./InputField";
 import SearchButton from "./SearchButton";
 import Notifications from "./Notifications";
+import UploadButton from "./UploadButton";
 
 const Header = styled(AppBar)`
   background: white;
@@ -20,6 +21,9 @@ const NavItems = styled(Box)`
   display: flex;
   align-items:center;
   color:black;
+  & > div{
+    margin-right:50px;
+  }
 `;
 const LogoItems = styled(Box)`
   margin-left: 5%;
@@ -48,7 +52,7 @@ const Nav = () => {
       >
         <LogoItems>
           <img src={logo} alt="logo" />
-          <Typography>The Honest Elite</Typography>
+          <Typography noWrap>The Honest Elite</Typography>
         </LogoItems>
 
         <Stack direction="row" spacing={1} alignItems="center">
@@ -58,7 +62,12 @@ const Nav = () => {
         </Stack>
 
         <NavItems>
-          <Notifications /> 
+          <Box>
+            <Notifications />
+          </Box>
+          <Box>
+            <UploadButton />
+          </Box>
         </NavItems>
       </Stack>
     </Header>
