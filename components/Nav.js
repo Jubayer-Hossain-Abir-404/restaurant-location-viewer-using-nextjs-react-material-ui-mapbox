@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Box, Typography, styled, Stack } from "@mui/material";
+import { AppBar, Box, Typography, styled, Stack } from "@mui/material";
 
 import { server } from "../config";
 
