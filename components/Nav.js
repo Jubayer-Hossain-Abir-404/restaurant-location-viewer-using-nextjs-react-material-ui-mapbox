@@ -1,20 +1,17 @@
-import {
-  AppBar,
-  Toolbar,
-  Box,
-  Typography,
-  styled,
-} from "@mui/material";
+import { AppBar, Toolbar, Box, Typography, styled, Stack } from "@mui/material";
 
 import { server } from "../config";
 
 import Link from "next/link";
 import BasicSelect from "./BasicSelect";
+import InputField from "./InputField";
+import SearchButton from "./SearchButton";
 
 const Header = styled(AppBar)`
   background: white;
   height: 100px;
   padding: 20px 0;
+  width: 100%;
 `;
 
 
@@ -48,21 +45,22 @@ const Nav = () => {
   const logo = `${server}/Images/logo.png`;
   return (
     <Header position="static">
-      <Toolbar>
+      <Stack
+        direction="row"
+        spacing={2}
+        justifyContent="space-between"
+        alignItems="center"
+      >
         <LogoItems>
-          <img src={logo} alt="logo"/>
+          <img src={logo} alt="logo" />
           <Typography>The Honest Elite</Typography>
         </LogoItems>
 
-        <NavItems>
+        <Stack direction="row" spacing={1} alignItems="center">
           <BasicSelect />
-          <Link href="/about">
-            <Typography>About</Typography>
-          </Link>
-          <Link href="/contact">
-            <Typography>Contact</Typography>
-          </Link>
-        </NavItems>
+          <InputField />
+          <SearchButton />
+        </Stack>
 
         <NavItems>
           <Link href="/">
@@ -75,7 +73,7 @@ const Nav = () => {
             <Typography>Contact</Typography>
           </Link>
         </NavItems>
-      </Toolbar>
+      </Stack>
     </Header>
   );
 };
