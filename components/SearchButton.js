@@ -14,7 +14,7 @@ const WhiteButton = styled(Button)`
 export default function SearchButton() {
     
   return (
-    <WhiteButton>
+    <WhiteButton style={{ marginLeft:8 }}>
       <SearchIcon style={{ width:32, height:32 } }/>
     </WhiteButton>
   );

@@ -6,6 +6,7 @@ import Link from "next/link";
 import BasicSelect from "./BasicSelect";
 import InputField from "./InputField";
 import SearchButton from "./SearchButton";
+import Notifications from "./Notifications";
 
 const Header = styled(AppBar)`
   background: white;
@@ -18,13 +19,7 @@ const Header = styled(AppBar)`
 const NavItems = styled(Box)`
   display: flex;
   align-items:center;
-  margin-left: auto;
-  justify-content: space-between;
-  & > p {
-    margin-right: 100px;
-    cursor: pointer;
-    color: black;
-  }
+  color:black;
 `;
 const LogoItems = styled(Box)`
   margin-left: 5%;
@@ -63,15 +58,7 @@ const Nav = () => {
         </Stack>
 
         <NavItems>
-          <Link href="/">
-            <Typography>Home</Typography>
-          </Link>
-          <Link href="/about">
-            <Typography>About</Typography>
-          </Link>
-          <Link href="/contact">
-            <Typography>Contact</Typography>
-          </Link>
+          <Notifications /> 
         </NavItems>
       </Stack>
     </Header>
