@@ -2,6 +2,8 @@ import {Box, styled} from "@mui/material";
 
 import { stores } from "../data";
 
+import { server } from "../config";
+
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 import { useState, useEffect } from "react";
 
@@ -55,6 +57,14 @@ const Body = () => {
     }
   });
 
+  const reduceMarkerSize = (cName) => {
+    const markerClasses = Array.from(document.getElementsByClassName(cName));
+    console.log(markerClasses);
+    markerClasses.forEach(marker => {
+      marker.style.backgroundImage = `url(${server}/Images/Ellipse_S.png)`;
+    })
+  }
+
   /**
    * Add a marker to the map for every store listing.
    **/
@@ -65,8 +75,10 @@ const Body = () => {
       const el = document.createElement("div");
       /* Assign a unique `id` to the marker. */
       el.id = `marker-${marker.properties.id}`;
+      const storeId = `marker-${marker.properties.id}`;
       /* Assign the `marker` class to each marker for styling. */
       el.className = "marker";
+
 
       /**
        * Create a marker using the div element
@@ -85,14 +97,15 @@ const Body = () => {
       el.addEventListener("click", (e) => {
         /* Fly to the point */
         flyToStore(marker);
+
+        // reduce all the marker size to it's initial stage
+        reduceMarkerSize("marker");
+        // to scale the marker image
+        document.getElementById(
+          storeId
+        ).style.backgroundImage = `url(${server}/Images/Ellipse.png)`;
         /* Close all other popups and display popup for clicked store */
         createPopUp(marker);
-        /* Highlight listing in sidebar */
-        const activeItem = document.getElementsByClassName("active");
-        e.stopPropagation();
-        if (activeItem[0]) {
-          activeItem[0].classList.remove("active");
-        }
       });
     }
   }

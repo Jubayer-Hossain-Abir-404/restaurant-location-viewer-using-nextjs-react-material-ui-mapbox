@@ -33,11 +33,13 @@ body {
 .marker {
   border: none;
   cursor: pointer;
-  height: 56px;
-  width: 56px;
-  background-image: url(../public/Images/Ellipse.png);
+  width: 32px;
+  height: 32px;
+  background-image: url(../public/Images/Ellipse_S.png);
   background-repeat: no-repeat;
 }
+
+
 
 /* Marker tweaks */
 .mapboxgl-popup {
