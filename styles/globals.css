@@ -69,7 +69,10 @@ body {
 .mapboxgl-popup-content h4 {
   margin: 0;
   padding: 10px;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 /* .mapboxgl-popup-content div {
@@ -87,7 +90,6 @@ body {
 /* for the popup card */
 
 .popUpCard{
-  position: relative;
   width: 312px;
 }
 .popUpImage{
@@ -97,4 +99,16 @@ body {
 
 .popUpInfo{
   background-color: white;
+}
+.addressInfo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconSize{
+  width: 18px;
+  height: 18px;
+  color: #6F6F6F;
+  margin-right: 10px;
 }

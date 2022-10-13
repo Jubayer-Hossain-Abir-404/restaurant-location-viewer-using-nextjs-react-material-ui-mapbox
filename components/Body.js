@@ -4,6 +4,7 @@ import { stores } from "../data";
 
 import { server } from "../config";
 
+
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 import { useState, useEffect } from "react";
 
@@ -138,7 +139,10 @@ const Body = () => {
         <div class="popUpCard">
           <img class="popUpImage" src="${currentFeature.properties.photo}" alt="" />
           <div class="popUpInfo">
-              <h4>${currentFeature.properties.address}</h4>
+              <div class="addressInfo">
+                <h4>${currentFeature.properties.address}</h4>
+                <svg class="iconSize" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div> 
           </div>
         </div>
         `

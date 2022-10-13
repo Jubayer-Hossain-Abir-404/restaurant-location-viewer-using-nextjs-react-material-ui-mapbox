@@ -12,6 +12,13 @@ export default function Home() {
         <meta name="description" content="Restaurant Page" />
         <link rel="icon" href="/favicon.ico" />
         <link href={mapBoxCSS} rel="stylesheet" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
       </Head>
       <Nav />
       <Body />
