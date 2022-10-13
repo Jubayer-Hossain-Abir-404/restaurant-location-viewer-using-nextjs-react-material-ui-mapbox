@@ -33,8 +33,8 @@ body {
 .marker {
   border: none;
   cursor: pointer;
-  width: 32px;
-  height: 32px;
+  width: 14px;
+  height: 14px;
   background-image: url(../public/Images/Ellipse_S.png);
   background-repeat: no-repeat;
 }

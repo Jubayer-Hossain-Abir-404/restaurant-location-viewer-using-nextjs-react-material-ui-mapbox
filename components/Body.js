@@ -59,9 +59,11 @@ const Body = () => {
 
   const reduceMarkerSize = (cName) => {
     const markerClasses = Array.from(document.getElementsByClassName(cName));
-    console.log(markerClasses);
+    // console.log(markerClasses);
     markerClasses.forEach(marker => {
       marker.style.backgroundImage = `url(${server}/Images/Ellipse_S.png)`;
+      marker.style.width = "14px";
+      marker.style.height = "14px";
     })
   }
 
@@ -101,9 +103,11 @@ const Body = () => {
         // reduce all the marker size to it's initial stage
         reduceMarkerSize("marker");
         // to scale the marker image
-        document.getElementById(
-          storeId
-        ).style.backgroundImage = `url(${server}/Images/Ellipse.png)`;
+        const id = document.getElementById(storeId);
+        id.style.backgroundImage = `url(${server}/Images/Ellipse.png)`;
+        id.style.width = "32px";
+        id.style.height = "32px";
+
         /* Close all other popups and display popup for clicked store */
         createPopUp(marker);
       });
