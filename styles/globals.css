@@ -75,6 +75,16 @@ body {
   line-height: 26px;
 }
 
+.mapboxgl-popup-content h5 {
+  margin: 0;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6F6F6F;
+}
+
 /* .mapboxgl-popup-content div {
   padding: 10px;
 } */
@@ -110,5 +120,17 @@ body {
   width: 18px;
   height: 18px;
   color: #6F6F6F;
+  margin-left: 10px;
+}
+
+.addressInfo .iconSize{
   margin-right: 10px;
+}
+
+
+.location{
+  margin-top: -12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
