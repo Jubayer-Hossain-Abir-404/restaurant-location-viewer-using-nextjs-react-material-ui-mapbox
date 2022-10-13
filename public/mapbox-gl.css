@@ -5,11 +5,11 @@
     -webkit-tap-highlight-color: rgb(0 0 0/0)
 }
 
-/* .mapboxgl-canvas {
+.mapboxgl-canvas {
     position: absolute;
-    left: 0;
-    top: 0
-} */
+    /* left: 0;
+    top: 0 */
+}
 
 .mapboxgl-map:-webkit-full-screen {
     width: 100%;

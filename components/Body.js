@@ -10,7 +10,7 @@ const Div = styled(Box)`
   height: 100vh;
   position: relative;
   width: 100%;
-  padding: 50px;
+  padding: 50px 0 50px 80px;
 `;
 
 const Body = () => {
@@ -124,9 +124,7 @@ const Body = () => {
 
   return (
     <Div>
-      <section className="mapSection">
-        <div id="map" class="map"></div>
-      </section>
+      <div id="map" class="map"></div>
     </Div>
   );
 }
