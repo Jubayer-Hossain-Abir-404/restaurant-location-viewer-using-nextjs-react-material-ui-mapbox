@@ -134,7 +134,14 @@ const Body = () => {
     const popup = new mapboxgl.Popup({ closeOnClick: false })
       .setLngLat(currentFeature.geometry.coordinates)
       .setHTML(
-        `<h3>Sweetgreen</h3><h4>${currentFeature.properties.address}</h4>`
+        `
+        <div class="popUpCard">
+          <img class="popUpImage" src="${currentFeature.properties.photo}" alt="" />
+          <div class="popUpInfo">
+              <h4>${currentFeature.properties.address}</h4>
+          </div>
+        </div>
+        `
       )
       .addTo(Map);
   }

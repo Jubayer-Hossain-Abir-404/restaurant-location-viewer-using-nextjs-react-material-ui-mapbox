@@ -1,3 +1,5 @@
+import { server } from "./config";
+
 export const stores = {
   type: "FeatureCollection",
   features: [
@@ -10,6 +12,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(202) 234-7336",
         phone: "2022347336",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "1471 P St NW",
         city: "Washington DC",
         country: "United States",
@@ -27,6 +30,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(202) 507-8357",
         phone: "2025078357",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "2221 I St NW",
         city: "Washington DC",
         country: "United States",
@@ -44,6 +48,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(202) 387-9338",
         phone: "2023879338",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "1512 Connecticut Ave NW",
         city: "Washington DC",
         country: "United States",
@@ -61,6 +66,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(202) 337-9338",
         phone: "2023379338",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "3333 M St NW",
         city: "Washington DC",
         country: "United States",
@@ -78,6 +84,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(202) 547-9338",
         phone: "2025479338",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "221 Pennsylvania Ave SE",
         city: "Washington DC",
         country: "United States",
@@ -93,6 +100,7 @@ export const stores = {
         coordinates: [-76.933492720127, 38.99225245786],
       },
       properties: {
+        photo: `${server}/Images/restaurantImage.png`,
         address: "8204 Baltimore Ave",
         city: "College Park",
         country: "United States",
@@ -109,6 +117,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(301) 654-7336",
         phone: "3016547336",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "4831 Bethesda Ave",
         cc: "US",
         city: "Bethesda",
@@ -126,6 +135,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(571) 203-0082",
         phone: "5712030082",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "11935 Democracy Dr",
         city: "Reston",
         country: "United States",
@@ -143,6 +153,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(703) 522-2016",
         phone: "7035222016",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "4075 Wilson Blvd",
         city: "Arlington",
         country: "United States",
@@ -160,6 +171,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(610) 642-9400",
         phone: "6106429400",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "68 Coulter Ave",
         city: "Ardmore",
         country: "United States",
@@ -176,6 +188,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(215) 386-1365",
         phone: "2153861365",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "3925 Walnut St",
         city: "Philadelphia",
         country: "United States",
@@ -192,6 +205,7 @@ export const stores = {
       properties: {
         phoneFormatted: "(202) 331-3355",
         phone: "2023313355",
+        photo: `${server}/Images/restaurantImage.png`,
         address: "1901 L St. NW",
         city: "Washington DC",
         country: "United States",

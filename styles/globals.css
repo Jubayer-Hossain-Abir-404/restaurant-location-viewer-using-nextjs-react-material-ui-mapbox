@@ -14,7 +14,7 @@ body {
 .map {
   width: 90%;
   margin: 0 auto;
-  height: 80vh;
+  height: 90vh;
   position: absolute;
 }
 
@@ -53,7 +53,7 @@ body {
 .mapboxgl-popup-content {
   font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
   padding: 0;
-  width: 180px;
+  width: 312px;
 }
 
 .mapboxgl-popup-content h3 {
@@ -72,14 +72,29 @@ body {
   font-weight: 400;
 }
 
-.mapboxgl-popup-content div {
+/* .mapboxgl-popup-content div {
   padding: 10px;
-}
+} */
 
-.mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
+/* .mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
   margin-top: 15px;
-}
+} */
 
 .mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
   border-bottom-color: #91c949;
+}
+
+/* for the popup card */
+
+.popUpCard{
+  position: relative;
+  width: 312px;
+}
+.popUpImage{
+  width: 312px;
+  height: 216px;;
+}
+
+.popUpInfo{
+  background-color: white;
 }
